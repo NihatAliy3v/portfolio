@@ -1,0 +1,118 @@
+.left-sidebar {
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 350px;
+  width: 100%;
+  padding: 30px;
+  border: 1px solid #565656;
+  border-radius: 30px;
+  .setting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -15px;
+    top: 10px;
+    background-color: $main-background;
+    width: 40px;
+    height: 40px;
+    animation: setting 3s linear infinite;
+    border-radius: 50%;
+    .setting-icon {
+      color: #999;
+      font-size: 20px;
+    }
+  }
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    .sidebar-logo {
+      width: 128px;
+      height: 36px;
+      .sidebar-logo-img {
+        height: 100%;
+      }
+    }
+    .sidebar-job {
+      max-width: 110px;
+      .sidebar-job-text {
+        font-size: 14px;
+        color: #fff;
+        text-align: end;
+        line-height: 20px;
+      }
+    }
+  }
+  .sidebar-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .sidebar-main-img {
+      max-width: 250px;
+      width: 100%;
+      margin-bottom: 46px;
+      border-radius: 30px;
+    }
+    .gmail {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 29px;
+      margin-bottom: 8px;
+    }
+    .country {
+      color: #fff;
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 29px;
+      margin-bottom: 30px;
+    }
+    .copyright {
+      font-size: 14px;
+      font-weight: 400;
+      color: #999;
+      line-height: 24px;
+      margin-bottom: 25px;
+    }
+    .social {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 30px;
+      .social-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        color: #999;
+        border: 2px solid #565656;
+        border-radius: 50%;
+        font-size: 18px;
+      }
+    }
+    .sidebar-btn {
+      width: 100%;
+      background-color: #28e98c;
+      display: flex;
+      justify-content: center;
+      padding: 11px 0;
+      border-radius: 30px;
+      font-size: 16px;
+      color: #000;
+      text-transform: uppercase;
+      line-height: 27px;
+    }
+  }
+}
+
+@keyframes setting {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
