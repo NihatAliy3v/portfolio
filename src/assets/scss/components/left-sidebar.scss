@@ -91,6 +91,11 @@
         border: 2px solid #565656;
         border-radius: 50%;
         font-size: 18px;
+        transition: all 0.3s;
+        &:hover {
+          color: #28e98c;
+          border-color: #28e98c;
+        }
       }
     }
     .sidebar-btn {
@@ -98,12 +103,23 @@
       background-color: #28e98c;
       display: flex;
       justify-content: center;
+      align-items: center;
       padding: 11px 0;
       border-radius: 30px;
       font-size: 16px;
       color: #000;
       text-transform: uppercase;
       line-height: 27px;
+      border: 2px solid #28e98c;
+      transition: all 0.3s;
+      &:hover {
+        background-color: transparent;
+        color: #28e98c;
+      }
+      .sidebar-btn-icon {
+        margin-right: 9px;
+        font-size: 20px;
+      }
     }
   }
 }

@@ -1,0 +1,31 @@
+.dropdown {
+  .drop-menu {
+    position: absolute;
+    right: 68px;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 1px solid #575757;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+      border-color: #28e98c;
+      span {
+        background-color: #28e98c;
+      }
+    }
+    span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: #fff;
+      transition: all 0.3s;
+    }
+  }
+}

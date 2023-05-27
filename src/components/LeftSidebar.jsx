@@ -9,6 +9,7 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
 import { AiOutlineSetting } from "react-icons/ai";
+import { RxEnvelopeClosed } from "react-icons/rx";
 
 export const LeftSidebar = () => {
   return (
@@ -43,7 +44,9 @@ export const LeftSidebar = () => {
             <AiFillGithub />
           </Link>
         </div>
-        <Link className="sidebar-btn">hire me!</Link>
+        <Link className="sidebar-btn">
+          <RxEnvelopeClosed className="sidebar-btn-icon" /> hire me!
+        </Link>
       </div>
     </div>
   );

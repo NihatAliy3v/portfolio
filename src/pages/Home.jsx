@@ -1,11 +1,16 @@
 import React from "react";
 import { LeftSidebar } from "../components/LeftSidebar";
+import { RightSidebar } from "../components/RightSidebar";
+import { DropMenu } from "../components/DropMenu";
 
 const Home = () => {
   return (
-    <div>
+    <section className="home">
       <LeftSidebar />
-    </div>
+      <DropMenu />
+
+      <RightSidebar />
+    </section>
   );
 };
 
