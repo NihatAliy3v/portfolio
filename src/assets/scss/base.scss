@@ -8,8 +8,14 @@
   font-family: "Inter", sans-serif;
 }
 .container {
-  width: 1440px;
+  width: 1130px;
+  padding: 0 15px;
   margin: 0 auto;
+}
+.row {
+  max-width: 770px;
+  margin-left: auto;
+  width: 100%;
 }
 body {
   background-color: $main-background;
