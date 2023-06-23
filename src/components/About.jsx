@@ -1,5 +1,5 @@
 import React from "react";
-import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
+import { AiOutlineUser } from "react-icons/ai";
 
 export const About = () => {
   return (

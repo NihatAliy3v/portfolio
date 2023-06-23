@@ -4,6 +4,7 @@ import { RightSidebar } from "../components/RightSidebar";
 import { DropMenu } from "../components/DropMenu";
 import { Hero } from "../components/Hero";
 import { About } from "../components/About";
+import { Resume } from "../components/Resume";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
         {/* sections */}
         <Hero />
         <About/>
+        <Resume/>
         {/* sections */}
       </main>
       <RightSidebar />
