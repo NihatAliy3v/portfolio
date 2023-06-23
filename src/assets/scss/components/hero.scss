@@ -2,6 +2,42 @@
   padding: 68px 0;
   .container {
     .row {
+      .section-head{
+        width: 135px;
+        height: 35px;
+        border-radius: 30px;
+        border: 1px solid #565656;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        .title{
+          font-size: 12px;
+          font-weight: 300;
+          color: #fff;
+          line-height: 14px;
+          text-transform: uppercase;
+        }
+        .icon-element{
+          font-size: 15px;
+          color: #fff;
+        }
+      }
+      .hero-main{
+        .hero-title{
+          font-size: 78px;
+          font-weight: 300;
+          color: #fff;
+          line-height: 90px;
+          .name{
+            color: $main-color;
+          }
+        }
+        .hero-summary{
+
+        }
+      }
     }
   }
 }
