@@ -3,6 +3,7 @@ import { LeftSidebar } from "../components/LeftSidebar";
 import { RightSidebar } from "../components/RightSidebar";
 import { DropMenu } from "../components/DropMenu";
 import { Hero } from "../components/Hero";
+import { About } from "../components/About";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <main>
         {/* sections */}
         <Hero />
+        <About/>
         {/* sections */}
       </main>
       <RightSidebar />

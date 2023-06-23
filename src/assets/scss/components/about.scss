@@ -1,0 +1,27 @@
+.about {
+  .container {
+    .row {
+      @include section-title;
+      .about-main {
+        .about-title {
+          font-size: 48px;
+          font-weight: 300;
+          line-height: 60px;
+          color: #fff;
+          margin-bottom: 33px;
+          .strong {
+            color: $main-color;
+          }
+        }
+        .about-paragraph {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 30px;
+          color: #999;
+          margin-bottom: 16px;
+          max-width: 610px;
+        }
+      }
+    }
+  }
+}

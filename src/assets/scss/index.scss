@@ -1,15 +1,19 @@
-// variable
+// Variable
 @import "./variable.scss";
 
-// base
+// Base
 @import "./base.scss";
 
-// components
+// Mixins
+@import "./mixins.scss";
+
+// Components
 @import "./components/header.scss";
 @import "./components/left-sidebar.scss";
 @import "./components/right-sidebar.scss";
 @import "./components/drop-menu.scss";
 @import "./components/hero.scss";
+@import "./components/about.scss";
 
-// pages
+// Pages
 @import "./pages/home.scss";

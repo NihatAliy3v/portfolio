@@ -1,5 +1,10 @@
-import React from "react";
+// React
+import { Link } from "react-router-dom";
+// Icons
 import { AiOutlineHome } from "react-icons/ai";
+import { BsArrowDown } from "react-icons/bs";
+// Images
+import RoundText from "../assets/images/round-text.png"
 
 export const Hero = () => {
   return (
@@ -18,6 +23,12 @@ export const Hero = () => {
               I design and code beautifully simple things and i love what i do.
               Just simple like that!
             </p>
+          </div>
+          <div className="go-to-ptoject-container">
+            <Link className="go-to-ptoject-btn">
+              <img src={RoundText} alt="rounded-text" />
+              <BsArrowDown className="icon"/>
+            </Link>
           </div>
         </div>
       </div>
