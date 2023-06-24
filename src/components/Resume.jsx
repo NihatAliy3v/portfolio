@@ -13,6 +13,26 @@ export const Resume = () => {
           <h2 className="resume-title">
             Education & <span className="strong">Experience</span>
           </h2>
+          <div className="resume-main">
+            <div className="resume-list">
+              <div className="resume-item">
+                <span className="item-date">2020 - Present</span>
+                <h3 className="item-title">Framer Desinger & Developer</h3>
+                <p className="item-description">Brunodee Agency</p>
+                <h3 className="item-title">Front-End WordPress Developer</h3>
+                <p className="item-description">Envato Market</p>
+              </div>
+              <div className="resume-item">
+                <span className="item-date">2013 - 2019</span>
+                <h3 className="item-title">Webflow Developer & Co-Founder</h3>
+                <p className="item-description">Designflow Studio</p>
+                <h3 className="item-title">Web Designer</h3>
+                <p className="item-description">Freelance</p>
+                <h3 className="item-title">Leader Team of Marketing</h3>
+                <p className="item-description">AHA Marketing Agency</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
