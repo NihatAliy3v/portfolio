@@ -1,0 +1,66 @@
+.services {
+  padding: 68px 0;
+  .container {
+    .row {
+      @include section-title;
+      .services-title {
+        font-size: 48px;
+        font-weight: 300;
+        line-height: 60px;
+        color: #fff;
+        margin-bottom: 33px;
+        .strong {
+          color: $main-color;
+        }
+      }
+      .services-main {
+        .services-list {
+          .services-item {
+            width: 770px;
+            height: 204px;
+            padding: 44px 48px 41px;
+            border: 1px solid #565656;
+            border-radius: 20px;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: all 0.2s;
+            position: relative;
+            &:hover {
+              border-color: $main-color;
+            }
+            .title {
+              font-size: 24px;
+              font-weight: 300;
+              line-height: 29px;
+              color: #fff;
+              margin-bottom: 8px;
+            }
+            .description {
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 24px;
+              color: #999;
+              margin-bottom: 30px;
+            }
+            .amount {
+              display: inline-block;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 20px;
+              color: #fff;
+            }
+            .icon {
+              position: absolute;
+              right: 48px;
+              top: 44px;
+              color: $main-color;
+              font-size: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

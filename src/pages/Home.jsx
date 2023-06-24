@@ -5,6 +5,7 @@ import { DropMenu } from "../components/DropMenu";
 import { Hero } from "../components/Hero";
 import { About } from "../components/About";
 import { Resume } from "../components/Resume";
+import { Services } from "../components/Services";
 
 const Home = () => {
   return (
@@ -14,8 +15,9 @@ const Home = () => {
       <main>
         {/* sections */}
         <Hero />
-        <About/>
-        <Resume/>
+        <About />
+        <Resume />
+        <Services />
         {/* sections */}
       </main>
       <RightSidebar />
