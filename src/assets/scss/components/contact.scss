@@ -1,0 +1,28 @@
+.contact {
+  .container {
+    .row {
+      @include section-title;
+      .contact-main {
+        .contact-title {
+          font-size: 48px;
+          font-weight: 300;
+          line-height: 60px;
+          color: #fff;
+          margin-bottom: 33px;
+          .strong {
+            color: $main-color;
+          }
+        }
+        .contact-form{
+            .form-title{
+                font-size: 24px;
+                font-weight: 300;
+                line-height: 29px;
+                color: #fff;
+                margin-bottom: 60px;
+            }
+        }
+      }
+    }
+  }
+}
