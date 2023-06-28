@@ -13,14 +13,40 @@
             color: $main-color;
           }
         }
-        .contact-form{
-            .form-title{
-                font-size: 24px;
-                font-weight: 300;
-                line-height: 29px;
-                color: #fff;
-                margin-bottom: 60px;
+        .contact-form {
+          .form-title {
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 29px;
+            color: #fff;
+            margin-bottom: 60px;
+          }
+          .form {
+            .form-row {
+              display: flex;
+              width: 100%;
+              margin: 0 -12px;
+              height: 90px;
+              .input-container {
+                width: 50%;
+                padding: 0 12px;
+                input {
+                  width: 100%;
+                }
+                label {
+                  display: block;
+                  font-size: 12px;
+                  font-weight: 400;
+                  line-height: 20px;
+                  color: #fff;
+                  margin-bottom: 2px;
+                  .star {
+                    color: #fc4545;
+                  }
+                }
+              }
             }
+          }
         }
       }
     }

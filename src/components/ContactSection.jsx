@@ -16,8 +16,33 @@ export const ContactSection = () => {
             </h2>
             <div className="contact-form">
               <h4 className="form-title">hello@drake.design</h4>
-              <form action="">
-                
+              <form className="form">
+                <div className="form-row">
+                  <div className="input-container">
+                    <label htmlFor="">
+                      FULL NAME <span className="star">*</span>
+                    </label>
+                    <input type="text" placeholder="Your Full Name" />
+                  </div>
+                  <div className="input-container">
+                    <label htmlFor="">
+                      EMAIL <span className="star">*</span>
+                    </label>
+                    <input type="text" />
+                  </div>
+                </div>
+                <div className="form-row">
+                  <div className="input-container">
+                    <label htmlFor="">PHONE (OPTIONAL)</label>
+                    <input type="text" />
+                  </div>
+                </div>
+                <div className="form-row">
+                  <div className="input-container">
+                    <label htmlFor="">MESSAGE</label>
+                    <input type="text" />
+                  </div>
+                </div>
               </form>
             </div>
           </div>
