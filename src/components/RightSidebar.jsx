@@ -7,23 +7,39 @@ import { FaStream } from "react-icons/fa";
 import { BsGrid1X2 } from "react-icons/bs";
 import { BiMessageDetail } from "react-icons/bi";
 import { RxEnvelopeClosed } from "react-icons/rx";
+// Active menu
+import { useActiveMenu } from "react-active-menu";
 
 export const RightSidebar = () => {
+  const { active, registerContainer, registerSection, registerTrigger } =
+    useActiveMenu({
+      smooth: true,
+    });
   return (
     <div className="right-sidebar">
       <nav className="navbar">
         <ul className="nav-list">
           <li className="nav-item">
-            <ScrollLink className="nav-link" smooth={true}>
+            <button
+              ref={registerTrigger("section-1")}
+              className={`nav-link ${active === "section-1" ? "active" : ""}`}
+              type="button"
+              smooth={true}
+            >
               <AiOutlineHome className="icon" />
               <span className="link-title">Home</span>
-            </ScrollLink>
+            </button>
           </li>
           <li className="nav-item">
-            <ScrollLink className="nav-link" smooth={true}>
+            <button
+              ref={registerTrigger("section-2")}
+              className={`nav-link ${active === "section-1" ? "active" : ""}`}
+              type="button"
+              smooth={true}
+            >
               <AiOutlineUser className="icon" />
               <span className="link-title">About</span>
-            </ScrollLink>
+            </button>
           </li>
           <li className="nav-item">
             <ScrollLink className="nav-link" smooth={true}>

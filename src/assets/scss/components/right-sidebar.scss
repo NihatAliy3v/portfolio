@@ -23,6 +23,9 @@
           justify-content: center;
           cursor: pointer;
           position: relative;
+          background-color: transparent;
+          border: none;
+          outline: none;
           &:hover {
             .icon {
               color: #28e98c;

@@ -10,16 +10,28 @@ export const MySkills = () => {
     <section className="my-skills">
       <div className="container">
         <div className="row">
-          <div className="section-head">
+          <div
+            className="section-head"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             <IoShapesOutline className="icon-element" />
             <h2 className="title">my skills</h2>
           </div>
-          <h2 className="my-skills-title">
+          <h2
+            className="my-skills-title"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
             My <span className="strong">Advantages</span>
           </h2>
           <div className="skills-main">
             <div className="skill-group">
-              <div className="skill-item-container">
+              <div
+                className="skill-item-container"
+                data-aos="fade-right"
+                data-aos-duration="1500"
+              >
                 <div className="skill-item">
                   <div className="skill-box">
                     <img src={HtmlIcon} alt="html-icon" />
@@ -28,7 +40,11 @@ export const MySkills = () => {
                   <h4 className="skill-text">Html</h4>
                 </div>
               </div>
-              <div className="skill-item-container">
+              <div
+                className="skill-item-container"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
                 <div className="skill-item">
                   <div className="skill-box">
                     <img src={CssIcon} alt="css-icon" />
@@ -37,7 +53,11 @@ export const MySkills = () => {
                   <h4 className="skill-text">Css</h4>
                 </div>
               </div>
-              <div className="skill-item-container">
+              <div
+                className="skill-item-container"
+                data-aos="fade-down"
+                data-aos-duration="1500"
+              >
                 <div className="skill-item">
                   <div className="skill-box">
                     <img src={JsIcon} alt="js-icon" />
@@ -46,7 +66,11 @@ export const MySkills = () => {
                   <h4 className="skill-text">JavaScript</h4>
                 </div>
               </div>
-              <div className="skill-item-container">
+              <div
+                className="skill-item-container"
+                data-aos="fade-left"
+                data-aos-duration="1500"
+              >
                 <div className="skill-item">
                   <div className="skill-box">
                     <img src={ReactIcon} alt="react-icon" />
@@ -55,7 +79,11 @@ export const MySkills = () => {
                   <h4 className="skill-text">React</h4>
                 </div>
               </div>
-              <div className="skill-item-container">
+              <div
+                className="skill-item-container"
+                data-aos="fade-right"
+                data-aos-duration="1500"
+              >
                 <div className="skill-item">
                   <div className="skill-box">
                     <img src={ReduxIcon} alt="redux-icon" />

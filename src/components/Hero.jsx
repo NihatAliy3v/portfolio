@@ -4,11 +4,17 @@ import { Link } from "react-router-dom";
 import { AiOutlineHome } from "react-icons/ai";
 import { BsArrowDown } from "react-icons/bs";
 // Images
-import RoundText from "../assets/images/round-text.png"
+import RoundText from "../assets/images/round-text.png";
+import { useActiveMenu } from "react-active-menu";
 
 export const Hero = () => {
+  const { registerContainer, registerSection, registerTrigger } = useActiveMenu(
+    {
+      smooth: true,
+    }
+  );
   return (
-    <section className="hero">
+    <section className="hero" ref={registerSection("section-1")}>
       <div className="container">
         <div className="row">
           <div className="section-head">
@@ -17,7 +23,8 @@ export const Hero = () => {
           </div>
           <div className="hero-main">
             <h1 className="hero-title">
-              Say Hi from <span className="name">Drake</span>, Webflow Designer and Developer
+              Say Hi from <span className="name">Nihat</span>, Frontend
+              Developer
             </h1>
             <p className="hero-summary">
               I design and code beautifully simple things and i love what i do.
@@ -27,7 +34,7 @@ export const Hero = () => {
           <div className="go-to-ptoject-container">
             <Link className="go-to-ptoject-btn">
               <img src={RoundText} alt="rounded-text" />
-              <BsArrowDown className="icon"/>
+              <BsArrowDown className="icon" />
             </Link>
           </div>
         </div>
