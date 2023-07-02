@@ -1,15 +1,10 @@
 import React from "react";
-import { useActiveMenu } from "react-active-menu";
 import { AiOutlineUser } from "react-icons/ai";
 
 export const About = () => {
-  const { registerContainer, registerSection, registerTrigger } = useActiveMenu(
-    {
-      smooth: true,
-    }
-  );
+
   return (
-    <section className="about" ref={registerSection("section-1")}>
+    <section className="about">
       <div className="container">
         <div className="row">
           <div

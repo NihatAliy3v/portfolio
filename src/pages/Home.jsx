@@ -7,25 +7,21 @@ import { Resume } from "../components/Resume";
 import { Services } from "../components/Services";
 import { MySkills } from "../components/MySkills";
 import { ContactSection } from "../components/ContactSection";
-import { useActiveMenu } from "react-active-menu";
+import { Portfolio } from "../components/Portfolio";
 
 const Home = () => {
-  const { registerContainer, registerSection, registerTrigger } = useActiveMenu(
-    {
-      smooth: true,
-    }
-  );
   return (
     <section className="home">
       <LeftSidebar />
       <DropMenu />
-      <main ref={registerContainer}>
+      <main>
         {/* sections */}
         <Hero />
         <About />
         <Resume />
         <Services />
         <MySkills />
+        <Portfolio />
         <ContactSection />
         {/* sections */}
       </main>

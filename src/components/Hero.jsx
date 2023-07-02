@@ -5,16 +5,11 @@ import { AiOutlineHome } from "react-icons/ai";
 import { BsArrowDown } from "react-icons/bs";
 // Images
 import RoundText from "../assets/images/round-text.png";
-import { useActiveMenu } from "react-active-menu";
 
 export const Hero = () => {
-  const { registerContainer, registerSection, registerTrigger } = useActiveMenu(
-    {
-      smooth: true,
-    }
-  );
+
   return (
-    <section className="hero" ref={registerSection("section-1")}>
+    <section className="hero">
       <div className="container">
         <div className="row">
           <div className="section-head">

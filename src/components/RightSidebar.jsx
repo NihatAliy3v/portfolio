@@ -8,50 +8,37 @@ import { BsGrid1X2 } from "react-icons/bs";
 import { BiMessageDetail } from "react-icons/bi";
 import { RxEnvelopeClosed } from "react-icons/rx";
 // Active menu
-import { useActiveMenu } from "react-active-menu";
+
+
 
 export const RightSidebar = () => {
-  const { active, registerContainer, registerSection, registerTrigger } =
-    useActiveMenu({
-      smooth: true,
-    });
   return (
     <div className="right-sidebar">
       <nav className="navbar">
         <ul className="nav-list">
           <li className="nav-item">
-            <button
-              ref={registerTrigger("section-1")}
-              className={`nav-link ${active === "section-1" ? "active" : ""}`}
-              type="button"
-              smooth={true}
-            >
+            <button className="nav-link" type="button">
               <AiOutlineHome className="icon" />
               <span className="link-title">Home</span>
             </button>
           </li>
           <li className="nav-item">
-            <button
-              ref={registerTrigger("section-2")}
-              className={`nav-link ${active === "section-1" ? "active" : ""}`}
-              type="button"
-              smooth={true}
-            >
+            <button className="nav-link" type="button">
               <AiOutlineUser className="icon" />
               <span className="link-title">About</span>
             </button>
           </li>
           <li className="nav-item">
-            <ScrollLink className="nav-link" smooth={true}>
+            <button className="nav-link" type="button">
               <IoBriefcaseOutline className="icon" />
               <span className="link-title">Resume</span>
-            </ScrollLink>
+            </button>
           </li>
           <li className="nav-item">
-            <ScrollLink className="nav-link" smooth={true}>
+            <button className="nav-link" type="button">
               <FaStream className="icon" />
               <span className="link-title">Services</span>
-            </ScrollLink>
+            </button>
           </li>
           <li className="nav-item">
             <ScrollLink className="nav-link" smooth={true}>

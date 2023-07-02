@@ -1,0 +1,17 @@
+.portfolio {
+  .container {
+    .row {
+      @include section-title;
+      .portfolio-title {
+        font-size: 48px;
+        font-weight: 300;
+        line-height: 60px;
+        color: #fff;
+        margin-bottom: 33px;
+        .strong {
+          color: $main-color;
+        }
+      }
+    }
+  }
+}
