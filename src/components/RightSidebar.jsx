@@ -35,6 +35,7 @@ export const RightSidebar = () => {
               smooth={true}
               duration={1500}
               className="nav-link"
+              offset={1}
             >
               <AiOutlineUser className="icon" />
               <span className="link-title">About</span>
@@ -48,6 +49,7 @@ export const RightSidebar = () => {
               smooth={true}
               duration={1500}
               className="nav-link"
+              offset={2}
             >
               <IoBriefcaseOutline className="icon" />
               <span className="link-title">Resume</span>
@@ -61,6 +63,7 @@ export const RightSidebar = () => {
               smooth={true}
               duration={1500}
               className="nav-link"
+              offset={5}
             >
               <FaStream className="icon" />
               <span className="link-title">Services</span>
@@ -74,6 +77,7 @@ export const RightSidebar = () => {
               smooth={true}
               duration={1500}
               className="nav-link"
+              offset={5}
             >
               <IoShapesOutline className="icon" />
               <span className="link-title">Skills</span>
@@ -87,6 +91,7 @@ export const RightSidebar = () => {
               smooth={true}
               duration={1500}
               className="nav-link"
+              offset={5}
             >
               <BsGrid1X2 className="icon" />
               <span className="link-title">Portfolio</span>
@@ -106,6 +111,7 @@ export const RightSidebar = () => {
               smooth={true}
               duration={1000}
               className="nav-link"
+              offset={50}
             >
               <RxEnvelopeClosed className="icon" />
               <span className="link-title">Contact</span>
