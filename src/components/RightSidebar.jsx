@@ -9,45 +9,85 @@ import { BiMessageDetail } from "react-icons/bi";
 import { RxEnvelopeClosed } from "react-icons/rx";
 // Active menu
 
-
-
 export const RightSidebar = () => {
   return (
     <div className="right-sidebar">
       <nav className="navbar">
         <ul className="nav-list">
           <li className="nav-item">
-            <button className="nav-link" type="button">
+            <ScrollLink
+              activeClass="active"
+              to="hero"
+              spy={true}
+              smooth={true}
+              duration={1500}
+              className="nav-link"
+            >
               <AiOutlineHome className="icon" />
               <span className="link-title">Home</span>
-            </button>
+            </ScrollLink>
           </li>
           <li className="nav-item">
-            <button className="nav-link" type="button">
+            <ScrollLink
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={1500}
+              className="nav-link"
+            >
               <AiOutlineUser className="icon" />
               <span className="link-title">About</span>
-            </button>
+            </ScrollLink>
           </li>
           <li className="nav-item">
-            <button className="nav-link" type="button">
+            <ScrollLink
+              activeClass="active"
+              to="resume"
+              spy={true}
+              smooth={true}
+              duration={1500}
+              className="nav-link"
+            >
               <IoBriefcaseOutline className="icon" />
               <span className="link-title">Resume</span>
-            </button>
+            </ScrollLink>
           </li>
           <li className="nav-item">
-            <button className="nav-link" type="button">
+            <ScrollLink
+              activeClass="active"
+              to="services"
+              spy={true}
+              smooth={true}
+              duration={1500}
+              className="nav-link"
+            >
               <FaStream className="icon" />
               <span className="link-title">Services</span>
-            </button>
+            </ScrollLink>
           </li>
           <li className="nav-item">
-            <ScrollLink className="nav-link" smooth={true}>
+            <ScrollLink
+              activeClass="active"
+              to="skills"
+              spy={true}
+              smooth={true}
+              duration={1500}
+              className="nav-link"
+            >
               <IoShapesOutline className="icon" />
               <span className="link-title">Skills</span>
             </ScrollLink>
           </li>
           <li className="nav-item">
-            <ScrollLink className="nav-link" smooth={true}>
+            <ScrollLink
+              activeClass="active"
+              to="portfolio"
+              spy={true}
+              smooth={true}
+              duration={1500}
+              className="nav-link"
+            >
               <BsGrid1X2 className="icon" />
               <span className="link-title">Portfolio</span>
             </ScrollLink>
@@ -59,7 +99,14 @@ export const RightSidebar = () => {
             </ScrollLink>
           </li>
           <li className="nav-item">
-            <ScrollLink className="nav-link" smooth={true}>
+            <ScrollLink
+              activeClass="active"
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={1000}
+              className="nav-link"
+            >
               <RxEnvelopeClosed className="icon" />
               <span className="link-title">Contact</span>
             </ScrollLink>

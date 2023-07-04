@@ -42,6 +42,8 @@
                   font-weight: 300;
                   line-height: 29px;
                   color: #fff;
+                  position: relative;
+                  display: inline-block;
                   &::after {
                     transition: all 0.3s;
                     content: "";
@@ -59,8 +61,6 @@
               &:hover {
                 .title-link {
                   .title {
-                    position: relative;
-                    display: inline-block;
                     &::after {
                       content: "";
                       opacity: 1;

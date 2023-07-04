@@ -26,6 +26,11 @@
           background-color: transparent;
           border: none;
           outline: none;
+          &.active {
+            .icon {
+              color: #28e98c;
+            }
+          }
           &:hover {
             .icon {
               color: #28e98c;
@@ -68,14 +73,6 @@
             .link-title {
               opacity: 1;
               visibility: visible;
-            }
-          }
-        }
-
-        &:first-child {
-          .nav-link {
-            .icon {
-              color: #28e98c;
             }
           }
         }
