@@ -4,6 +4,7 @@ import portfolio1 from "../assets/images/portfolio1.jpg";
 import portfolio2 from "../assets/images/portfolio2.jpg";
 import portfolio3 from "../assets/images/portfolio3.jpg";
 import portfolio4 from "../assets/images/portfolio4.jpg";
+import { Link } from "react-router-dom";
 
 export const Portfolio = () => {
   return (
@@ -33,12 +34,14 @@ export const Portfolio = () => {
                   data-aos="fade-up"
                   data-aos-duration="1500"
                 >
-                  <div className="image-item">
+                  <Link to="" className="image-item">
                     <img src={portfolio1} alt="" />
-                  </div>
-                  <h4 className="title">
-                    Bureau - Architecture Studio Website
-                  </h4>
+                  </Link>
+                  <Link to="" className="title-link">
+                    <h4 className="title">
+                      Bureau - Architecture Studio Website
+                    </h4>
+                  </Link>
                 </div>
               </div>
               <div className="card-line">
@@ -47,20 +50,24 @@ export const Portfolio = () => {
                   data-aos="fade-right"
                   data-aos-duration="1500"
                 >
-                  <div className="image-item">
+                  <Link to="" className="image-item">
                     <img src={portfolio2} alt="" />
-                  </div>
-                  <h4 className="title">Moonex WordPress Theme</h4>
+                  </Link>
+                  <Link to="" className="title-link">
+                    <h4 className="title">Moonex WordPress Theme</h4>
+                  </Link>
                 </div>
                 <div
                   className="card"
                   data-aos="fade-left"
                   data-aos-duration="1500"
                 >
-                  <div className="image-item">
+                  <Link to="" className="image-item">
                     <img src={portfolio3} alt="" />
-                  </div>
-                  <h4 className="title">Taskly Dashboard</h4>
+                  </Link>
+                  <Link to="" className="title-link">
+                    <h4 className="title">Taskly Dashboard</h4>
+                  </Link>
                 </div>
               </div>
               <div className="card-line">
@@ -69,12 +76,14 @@ export const Portfolio = () => {
                   data-aos="fade-up"
                   data-aos-duration="1500"
                 >
-                  <div className="image-item">
+                  <Link to="" className="image-item">
                     <img src={portfolio4} alt="" />
-                  </div>
-                  <h4 className="title">
-                    Hinterland - Real Estate Site Redesign
-                  </h4>
+                  </Link>
+                  <Link to="" className="title-link">
+                    <h4 className="title">
+                      Hinterland - Real Estate Site Redesign
+                    </h4>
+                  </Link>
                 </div>
               </div>
             </div>
