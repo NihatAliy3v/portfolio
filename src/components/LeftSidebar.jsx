@@ -1,7 +1,7 @@
 import React from "react";
 // images
-import Logo from "../assets/images/logo.png";
-import Me from "../assets/images/me.jpg";
+import Logo from "../assets/images/main-logo.png";
+import Me from "../assets/images/real-me.jpg";
 import { Link } from "react-router-dom";
 // icons
 import { AiOutlineInstagram } from "react-icons/ai";
@@ -22,14 +22,13 @@ export const LeftSidebar = () => {
           <img className="sidebar-logo-img" src={Logo} alt="logo" />
         </div>
         <div className="sidebar-job">
-          <p className="sidebar-job-text">Framer Designer & Developer</p>
+          <p className="sidebar-job-text">Frontend Developer</p>
         </div>
       </div>
       <div className="sidebar-main">
         <img className="sidebar-main-img" src={Me} alt="me" />
-        <h2 className="gmail">hello@drake.design</h2>
-        <h2 className="country">Based in Los Angeles, CA</h2>
-        <p className="copyright">© 2022 Drake. All Rights Reserved</p>
+        <h2 className="gmail">nihataliy3v@gmail.com</h2>
+        <h2 className="country">Baku, Azerbaijan</h2>
         <div className="social">
           <Link className="social-link">
             <AiOutlineInstagram />

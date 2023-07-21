@@ -1,10 +1,11 @@
 .resume {
   padding: 68px 0;
+  overflow: hidden;
   .container {
     .row {
       @include section-title;
       .resume-title {
-        font-size: 48px;
+        font-size: 4.8rem;
         font-weight: 300;
         line-height: 60px;
         color: #fff;
@@ -17,7 +18,7 @@
         .resume-list {
           .resume-item {
             position: relative;
-            padding: 0 0 0 74px;
+            padding: 0 0 30px 74px;
             &:first-child {
               padding: 0 0 68px 74px;
             }
@@ -75,6 +76,24 @@
               line-height: 22px;
               color: #999;
               margin-bottom: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .resume {
+    .container {
+      .row {
+        .resume-main {
+          .resume-list {
+            .resume-item {
+              &:first-child {
+                padding: 0 0 68px 74px;
+              }
+              padding: 0 0 0 60px;
             }
           }
         }

@@ -1,6 +1,6 @@
 import { LeftSidebar } from "../components/LeftSidebar";
 import { RightSidebar } from "../components/RightSidebar";
-import { DropMenu } from "../components/DropMenu";
+// import { DropMenu } from "../components/DropMenu";
 import { Hero } from "../components/Hero";
 import { About } from "../components/About";
 import { Resume } from "../components/Resume";
@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <section className="home">
       <LeftSidebar />
-      <DropMenu />
+      {/* <DropMenu /> */}
       <main>
         {/* sections */}
         <Hero />

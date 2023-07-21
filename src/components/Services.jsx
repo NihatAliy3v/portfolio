@@ -36,9 +36,9 @@ export const Services = () => {
                 >
                   <h3 className="title">Development</h3>
                   <p className="description">
-                    I build website go live with Framer, Webflow or WordPress
+                    I create website with react library
                   </p>
-                  <span className="amount">126 PROJECTS</span>
+                  <span className="amount">10 PROJECTS</span>
                   <HiCodeBracket className="icon" />
                 </div>
               </div>

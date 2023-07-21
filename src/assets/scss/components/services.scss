@@ -4,7 +4,7 @@
     .row {
       @include section-title;
       .services-title {
-        font-size: 48px;
+        font-size: 4.8rem;
         font-weight: 300;
         line-height: 60px;
         color: #fff;
@@ -16,7 +16,7 @@
       .services-main {
         .services-list {
           .services-item {
-            width: 770px;
+            max-width: 770px;
             height: 204px;
             padding: 44px 48px 41px;
             border: 1px solid #565656;

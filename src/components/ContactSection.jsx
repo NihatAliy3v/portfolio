@@ -21,7 +21,7 @@ export const ContactSection = () => {
                 data-aos="fade-up"
                 data-aos-duration="1500"
               >
-                Let's Work <span className="strong">Together!</span>
+                Contact <span className="strong">Me!</span>
               </h2>
               <div className="contact-form">
                 <h4
@@ -29,7 +29,7 @@ export const ContactSection = () => {
                   data-aos="fade-up"
                   data-aos-duration="1500"
                 >
-                  hello@drake.design
+                  nihataliy3v@gmail.com
                 </h4>
                 <form className="form">
                   <div className="form-row">

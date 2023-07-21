@@ -1,10 +1,11 @@
 .my-skills {
   padding: 68px 0;
+  overflow: hidden;
   .container {
     .row {
       @include section-title;
       .my-skills-title {
-        font-size: 48px;
+        font-size: 4.8rem;
         font-weight: 300;
         line-height: 60px;
         color: #fff;
@@ -43,11 +44,11 @@
                   width: 70px;
                   margin-bottom: 29px;
                 }
-                .skill-percent{
+                .skill-percent {
                   font-size: 30px;
                   font-weight: 300;
                   line-height: 36px;
-                  color: $main-color
+                  color: $main-color;
                 }
               }
               .skill-text {
@@ -57,6 +58,53 @@
                 color: #fff;
                 text-align: center;
               }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .my-skills {
+    .container {
+      .row {
+        .skills-main {
+          .skill-group {
+            .skill-item-container {
+              width: 33%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .my-skills {
+    .container {
+      .row {
+        .skills-main {
+          .skill-group {
+            .skill-item-container {
+              width: 33.3%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .my-skills {
+    .container {
+      .row {
+        .skills-main {
+          .skill-group {
+            .skill-item-container {
+              width: 50%;
             }
           }
         }

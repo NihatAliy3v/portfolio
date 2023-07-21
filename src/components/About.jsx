@@ -21,7 +21,7 @@ export const About = () => {
                 data-aos="fade-up"
                 data-aos-duration="1500"
               >
-                Every great design begin with <br /> an even
+                Every great design begin with an even
                 <span className="strong"> better story</span>
               </h2>
               <p

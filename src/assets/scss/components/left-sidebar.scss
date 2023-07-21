@@ -50,11 +50,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
     .sidebar-main-img {
       max-width: 250px;
+      max-height: 211px;
       width: 100%;
-      margin-bottom: 46px;
+      height: 100%;
       border-radius: 30px;
+      object-fit: cover;
+      margin-bottom: 46px;
     }
     .gmail {
       color: #fff;
@@ -68,19 +72,12 @@
       font-size: 24px;
       font-weight: 300;
       line-height: 29px;
-      margin-bottom: 30px;
-    }
-    .copyright {
-      font-size: 14px;
-      font-weight: 400;
-      color: #999;
-      line-height: 24px;
-      margin-bottom: 25px;
+      margin-bottom: 40px;
     }
     .social {
       display: flex;
       gap: 8px;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
       .social-link {
         display: flex;
         justify-content: center;
@@ -93,14 +90,14 @@
         font-size: 18px;
         transition: all 0.3s;
         &:hover {
-          color: #28e98c;
-          border-color: #28e98c;
+          color: $main-color;
+          border-color: $main-border;
         }
       }
     }
     .sidebar-btn {
       width: 100%;
-      background-color: #28e98c;
+      background-color: $main-color;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -110,11 +107,11 @@
       color: #000;
       text-transform: uppercase;
       line-height: 27px;
-      border: 2px solid #28e98c;
+      border: 2px solid $main-color;
       transition: all 0.3s;
       &:hover {
         background-color: transparent;
-        color: #28e98c;
+        color: $main-color;
       }
       .sidebar-btn-icon {
         margin-right: 9px;
@@ -130,5 +127,16 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  .left-sidebar {
+    max-width: 767px;
+    width: 100%;
+    position: static;
+    transform: translateY(0);
+    margin: 0 auto;
+    margin-top: 20px;
   }
 }

@@ -1,5 +1,5 @@
 // React
-import { Element, Link as ScollLink } from "react-scroll";
+import { Element } from "react-scroll";
 import { Link as ScrollLink } from "react-scroll";
 // Icons
 import { AiOutlineHome } from "react-icons/ai";
@@ -19,12 +19,10 @@ export const Hero = () => {
             </div>
             <div className="hero-main">
               <h1 className="hero-title">
-                Say Hi from <span className="name">Nihat</span>, Frontend
-                Developer
+                <span className="name">Nihat Aliyev</span>, Frontend Developer
               </h1>
               <p className="hero-summary">
-                I design and code beautifully simple things and i love what i
-                do. Just simple like that!
+                I am Frontend Developer. I like to create website.
               </p>
             </div>
             <div className="go-to-ptoject-container">

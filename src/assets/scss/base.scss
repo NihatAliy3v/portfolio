@@ -20,3 +20,40 @@
 body {
   background-color: $main-background;
 }
+html {
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 1220px) {
+  .container {
+    max-width: 767px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 54%;
+  }
+  .container {
+    max-width: 640px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 48%;
+  }
+  .container {
+    max-width: 540px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 40%;
+  }
+  .container {
+    max-width: 440px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container {
+    max-width: 340px;
+  }
+}

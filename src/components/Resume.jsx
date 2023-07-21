@@ -29,24 +29,20 @@ export const Resume = () => {
                   data-aos="fade-left"
                   data-aos-duration="1500"
                 >
-                  <span className="item-date">2020 - Present</span>
-                  <h3 className="item-title">Framer Desinger & Developer</h3>
-                  <p className="item-description">Brunodee Agency</p>
-                  <h3 className="item-title">Front-End WordPress Developer</h3>
-                  <p className="item-description">Envato Market</p>
+                  <span className="item-date">2022 - 2023</span>
+                  <h3 className="item-title">Frontend Developer</h3>
+                  <p className="item-description">Texnoera Academy</p>
                 </div>
                 <div
                   className="resume-item"
                   data-aos="fade-left"
                   data-aos-duration="1500"
                 >
-                  <span className="item-date">2013 - 2019</span>
-                  <h3 className="item-title">Webflow Developer & Co-Founder</h3>
-                  <p className="item-description">Designflow Studio</p>
-                  <h3 className="item-title">Web Designer</h3>
-                  <p className="item-description">Freelance</p>
-                  <h3 className="item-title">Leader Team of Marketing</h3>
-                  <p className="item-description">AHA Marketing Agency</p>
+                  <span className="item-date">2021 - 2025</span>
+                  <h3 className="item-title">Information Technology</h3>
+                  <p className="item-description">
+                    Baku Engineering University
+                  </p>
                 </div>
               </div>
             </div>

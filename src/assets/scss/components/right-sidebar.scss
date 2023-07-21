@@ -28,12 +28,12 @@
           outline: none;
           &.active {
             .icon {
-              color: #28e98c;
+              color: $main-color;
             }
           }
           &:hover {
             .icon {
-              color: #28e98c;
+              color: $main-color;
             }
           }
           .icon {
@@ -78,5 +78,11 @@
         }
       }
     }
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  .right-sidebar {
+    display: none;
   }
 }
