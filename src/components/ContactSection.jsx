@@ -1,7 +1,32 @@
 import React from "react";
 import { RxEnvelopeClosed } from "react-icons/rx";
 import { Element } from "react-scroll";
+
+// Formik
+import { useFormik } from "formik";
+import validations from "./validations";
+
 export const ContactSection = () => {
+  const {
+    handleSubmit,
+    handleChange,
+    handleBlur,
+    handleReset,
+    values,
+    touched,
+    errors,
+  } = useFormik({
+    initialValues: {
+      fullName: "",
+      email: "",
+      phoneNumber: "",
+      message: "",
+    },
+    onSubmit: (values) => {
+      console.log(values);
+    },
+    validationSchema: validations,
+  });
   return (
     <Element name="contact">
       <section className="contact">
@@ -31,7 +56,7 @@ export const ContactSection = () => {
                 >
                   nihataliy3v@gmail.com
                 </h4>
-                <form className="form">
+                <form className="form" onSubmit={handleSubmit}>
                   <div className="form-row">
                     <div className="input-container">
                       <label htmlFor="fullName">
@@ -40,8 +65,15 @@ export const ContactSection = () => {
                       <input
                         type="text"
                         id="fullName"
+                        name="fullName"
                         placeholder="Your Full Name"
+                        value={values.fullName}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
                       />
+                      {errors.fullName && touched.fullName && (
+                        <span className="error-message">{errors.fullName}</span>
+                      )}
                     </div>
                     <div className="input-container">
                       <label htmlFor="email">
@@ -50,8 +82,15 @@ export const ContactSection = () => {
                       <input
                         type="email"
                         id="email"
+                        name="email"
                         placeholder="Your email adress"
+                        value={values.email}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
                       />
+                      {errors.email && touched.email && (
+                        <span className="error-message">{errors.email}</span>
+                      )}
                     </div>
                   </div>
                   <div className="form-row">
@@ -60,7 +99,10 @@ export const ContactSection = () => {
                       <input
                         type="text"
                         id="phone"
+                        name="phoneNumber"
                         placeholder="Your number phone"
+                        value={values.phoneNumber}
+                        onChange={handleChange}
                       />
                     </div>
                   </div>
@@ -68,13 +110,17 @@ export const ContactSection = () => {
                     <div className="input-container">
                       <label htmlFor="message">MESSAGE</label>
                       <textarea
-                        name=""
+                        name="message"
                         id="message"
                         placeholder="Write your message here ..."
+                        value={values.message}
+                        onChange={handleChange}
                       ></textarea>
                     </div>
                   </div>
-                  <button className="btn send-btn">send message</button>
+                  <button type="submit" className="btn send-btn">
+                    send message
+                  </button>
                 </form>
               </div>
             </div>
