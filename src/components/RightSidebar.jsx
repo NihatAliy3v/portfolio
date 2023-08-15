@@ -111,7 +111,7 @@ export const RightSidebar = () => {
               smooth={true}
               duration={1000}
               className="nav-link"
-              offset={50}
+              offset={60}
             >
               <RxEnvelopeClosed className="icon" />
               <span className="link-title">Contact</span>
