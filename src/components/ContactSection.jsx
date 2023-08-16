@@ -13,7 +13,6 @@ export const ContactSection = () => {
     handleSubmit,
     handleChange,
     handleBlur,
-    handleReset,
     values,
     touched,
     errors,
