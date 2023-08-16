@@ -109,6 +109,7 @@
       line-height: 27px;
       border: 2px solid $main-color;
       transition: all 0.3s;
+      cursor: pointer;
       &:hover {
         background-color: transparent;
         color: $main-color;

@@ -3,6 +3,8 @@ import React from "react";
 import Logo from "../assets/images/main-logo.png";
 import Me from "../assets/images/real-me.jpg";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
+
 // icons
 import { AiOutlineInstagram } from "react-icons/ai";
 import { AiOutlineTwitter } from "react-icons/ai";
@@ -43,9 +45,16 @@ export const LeftSidebar = () => {
             <AiFillGithub />
           </Link>
         </div>
-        <Link className="sidebar-btn">
+        <ScrollLink
+          activeClass="active"
+          to="contact"
+          smooth={true}
+          duration={1000}
+          offset={60}
+          className="sidebar-btn"
+        >
           <RxEnvelopeClosed className="sidebar-btn-icon" /> hire me!
-        </Link>
+        </ScrollLink>
       </div>
     </div>
   );
