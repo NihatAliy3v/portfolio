@@ -2,38 +2,49 @@ import React, { useRef } from "react";
 import { RxEnvelopeClosed } from "react-icons/rx";
 import { Element } from "react-scroll";
 import emailjs from "@emailjs/browser";
-
+import Swal from "sweetalert2";
 // Formik
 import { useFormik } from "formik";
 import validations from "./validations";
 
 export const ContactSection = () => {
   const form = useRef();
-  const {
-    handleSubmit,
-    handleChange,
-    handleBlur,
-    values,
-    touched,
-    errors,
-  } = useFormik({
-    initialValues: {
-      fullName: "",
-      email: "",
-      phoneNumber: "",
-      message: "",
-    },
-    onSubmit: (values) => {
-      console.log(values);
-      emailjs.sendForm(
-        "service_8wghzon",
-        "template_36lpw1i",
-        form.current,
-        "btxK6fUZkUldih7S3"
-      );
-    },
-    validationSchema: validations,
-  });
+  const { handleSubmit, handleChange, handleBlur, values, touched, errors } =
+    useFormik({
+      initialValues: {
+        fullName: "",
+        email: "",
+        phoneNumber: "",
+        message: "",
+      },
+      onSubmit: (values, e) => {
+        console.log(values);
+        e.resetForm();
+        emailjs.sendForm(
+          "service_8wghzon",
+          "template_36lpw1i",
+          form.current,
+          "btxK6fUZkUldih7S3"
+        );
+        const Toast = Swal.mixin({
+          toast: true,
+          position: "top-end",
+          showConfirmButton: false,
+          timer: 3000,
+          timerProgressBar: true,
+          didOpen: (toast) => {
+            toast.addEventListener("mouseenter", Swal.stopTimer);
+            toast.addEventListener("mouseleave", Swal.resumeTimer);
+          },
+        });
+
+        Toast.fire({
+          icon: "success",
+          title: "Sent successfully",
+        });
+      },
+      validationSchema: validations,
+    });
   return (
     <Element name="contact">
       <section className="contact">
