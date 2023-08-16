@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useRef } from "react";
 import { RxEnvelopeClosed } from "react-icons/rx";
 import { Element } from "react-scroll";
+import emailjs from "@emailjs/browser";
 
 // Formik
 import { useFormik } from "formik";
 import validations from "./validations";
 
 export const ContactSection = () => {
+  const form = useRef();
   const {
     handleSubmit,
     handleChange,
@@ -24,6 +26,12 @@ export const ContactSection = () => {
     },
     onSubmit: (values) => {
       console.log(values);
+      emailjs.sendForm(
+        "service_8wghzon",
+        "template_36lpw1i",
+        form.current,
+        "btxK6fUZkUldih7S3"
+      );
     },
     validationSchema: validations,
   });
@@ -56,7 +64,7 @@ export const ContactSection = () => {
                 >
                   nihataliy3v@gmail.com
                 </h4>
-                <form className="form" onSubmit={handleSubmit}>
+                <form className="form" onSubmit={handleSubmit} ref={form}>
                   <div className="form-row">
                     <div className="input-container">
                       <label htmlFor="fullName">
