@@ -3,7 +3,6 @@ import { IoShapesOutline } from "react-icons/io5";
 import travalerImage from "../assets/images/travaler-image.png";
 import hommeImage from "../assets/images/homme-image.png";
 import adminImage from "../assets/images/admin-panel.png";
-import portfolio4 from "../assets/images/portfolio4.jpg";
 import { Link } from "react-router-dom";
 import { Element } from "react-scroll";
 
