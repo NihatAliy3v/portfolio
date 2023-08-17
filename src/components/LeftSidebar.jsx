@@ -32,16 +32,32 @@ export const LeftSidebar = () => {
         <h2 className="gmail">nihataliy3v@gmail.com</h2>
         <h2 className="country">Baku, Azerbaijan</h2>
         <div className="social">
-          <Link className="social-link">
+          <Link
+            to="https://www.instagram.com/aliyev_n04/"
+            className="social-link"
+            target="_blank"
+          >
             <AiOutlineInstagram />
           </Link>
-          <Link className="social-link">
+          <Link
+            to="https://twitter.com/Nihat_Aliyev_"
+            className="social-link"
+            target="_blank"
+          >
             <AiOutlineTwitter />
           </Link>
-          <Link className="social-link">
+          <Link
+            to="www.linkedin.com/in/nihat-aliyev"
+            className="social-link"
+            target="_blank"
+          >
             <AiFillLinkedin />
           </Link>
-          <Link className="social-link">
+          <Link
+            to="https://github.com/NihatAliy3v"
+            className="social-link"
+            target="_blank"
+          >
             <AiFillGithub />
           </Link>
         </div>

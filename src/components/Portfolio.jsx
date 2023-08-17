@@ -1,18 +1,15 @@
 import React from "react";
 import { IoShapesOutline } from "react-icons/io5";
-import portfolio1 from "../assets/images/portfolio1.jpg";
-import portfolio2 from "../assets/images/portfolio2.jpg";
-import portfolio3 from "../assets/images/portfolio3.jpg";
+import travalerImage from "../assets/images/travaler-image.png";
+import hommeImage from "../assets/images/homme-image.png";
+import adminImage from "../assets/images/admin-panel.png";
 import portfolio4 from "../assets/images/portfolio4.jpg";
 import { Link } from "react-router-dom";
 import { Element } from "react-scroll";
 
 export const Portfolio = () => {
   return (
-    <Element
-      name="test"
-      
-    >
+    <Element name="test">
       <section className="portfolio">
         <div className="container">
           <div className="row">
@@ -40,13 +37,19 @@ export const Portfolio = () => {
                     data-aos="fade-up"
                     data-aos-duration="1500"
                   >
-                    <Link to="" className="image-item">
-                      <img src={portfolio1} alt="" />
+                    <Link
+                      to="https://github.com/NihatAliy3v/Homme-Project.git"
+                      className="image-item"
+                      target="_blank"
+                    >
+                      <img src={hommeImage} alt="" />
                     </Link>
-                    <Link to="" className="title-link">
-                      <h4 className="title">
-                        Bureau - Architecture Studio Website
-                      </h4>
+                    <Link
+                      to="https://github.com/NihatAliy3v/Homme-Project.git"
+                      className="title-link"
+                      target="_blank"
+                    >
+                      <h4 className="title">Homme - Clone</h4>
                     </Link>
                   </div>
                 </div>
@@ -56,27 +59,45 @@ export const Portfolio = () => {
                     data-aos="fade-right"
                     data-aos-duration="1500"
                   >
-                    <Link to="" className="image-item">
-                      <img src={portfolio2} alt="" />
+                    <Link
+                      to="https://travaler-clone.netlify.app/"
+                      className="image-item"
+                      target="_blank"
+                    >
+                      <img src={travalerImage} alt="" />
                     </Link>
-                    <Link to="" className="title-link">
-                      <h4 className="title">Moonex WordPress Theme</h4>
+                    <Link
+                      to="https://travaler-clone.netlify.app/"
+                      className="title-link"
+                      target="_blank"
+                    >
+                      <h4 className="title">Travalers - Clone</h4>
                     </Link>
                   </div>
+                </div>
+                <div className="card-line">
                   <div
                     className="card"
                     data-aos="fade-left"
                     data-aos-duration="1500"
                   >
-                    <Link to="" className="image-item">
-                      <img src={portfolio3} alt="" />
+                    <Link
+                      to="https://github.com/NihatAliy3v/Admin-Panel.git"
+                      className="image-item"
+                      target="_blank"
+                    >
+                      <img src={adminImage} alt="" />
                     </Link>
-                    <Link to="" className="title-link">
-                      <h4 className="title">Taskly Dashboard</h4>
+                    <Link
+                      to="https://github.com/NihatAliy3v/Admin-Panel.git"
+                      className="title-link"
+                      target="_blank"
+                    >
+                      <h4 className="title">Admin Panel</h4>
                     </Link>
                   </div>
                 </div>
-                <div className="card-line">
+                {/* <div className="card-line">
                   <div
                     className="card"
                     data-aos="fade-up"
@@ -91,7 +112,7 @@ export const Portfolio = () => {
                       </h4>
                     </Link>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
