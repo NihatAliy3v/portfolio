@@ -8,25 +8,39 @@ import { Services } from "../components/Services";
 import { MySkills } from "../components/MySkills";
 import { ContactSection } from "../components/ContactSection";
 import { Portfolio } from "../components/Portfolio";
+import { useEffect, useState } from "react";
+import { Loading } from "../components/Loading";
 
 const Home = () => {
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1100);
+  }, []);
   return (
-    <section className="home">
-      <LeftSidebar />
-      {/* <DropMenu /> */}
-      <main>
-        {/* sections */}
-        <Hero />
-        <About />
-        <Resume />
-        <Services />
-        <MySkills />
-        <Portfolio />
-        <ContactSection />
-        {/* sections */}
-      </main>
-      <RightSidebar />
-    </section>
+    <>
+      {!loading ? (
+        <section className="home">
+          <LeftSidebar />
+          {/* <DropMenu /> */}
+          <main>
+            {/* sections */}
+            <Hero />
+            <About />
+            <Resume />
+            <Services />
+            <MySkills />
+            <Portfolio />
+            <ContactSection />
+            {/* sections */}
+          </main>
+          <RightSidebar />
+        </section>
+      ) : (
+        <Loading />
+      )}
+    </>
   );
 };
 
