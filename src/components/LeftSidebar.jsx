@@ -46,7 +46,7 @@ export const LeftSidebar = () => {
             <AiOutlineTwitter />
           </Link>
           <Link
-            to="www.linkedin.com/in/nihat-aliyev"
+            to="https://linkedin.com/in/nihat-aliyev"
             className="social-link"
             target="_blank"
           >
