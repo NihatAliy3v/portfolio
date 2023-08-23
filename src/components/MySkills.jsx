@@ -1,11 +1,15 @@
-import React from "react";
-import { IoShapesOutline } from "react-icons/io5";
+// Images
 import ReactIcon from "../assets/images/react-icon.png";
 import HtmlIcon from "../assets/images/html-icon.png";
 import CssIcon from "../assets/images/css-icon.png";
 import JsIcon from "../assets/images/javascript-icon.webp";
 import ReduxIcon from "../assets/images/redux-icon.png";
+// Libraries
 import { Element } from "react-scroll";
+import CountUp from "react-countup";
+// Icons
+import { IoShapesOutline } from "react-icons/io5";
+
 export const MySkills = () => {
   return (
     <Element name="skills">
@@ -37,7 +41,15 @@ export const MySkills = () => {
                   <div className="skill-item">
                     <div className="skill-box">
                       <img src={HtmlIcon} alt="html-icon" />
-                      <span className="skill-percent">98%</span>
+                      {/* <span className="skill-percent">98%</span> */}
+                      <CountUp
+                        className="skill-percent"
+                        enableScrollSpy={true}
+                        duration={5}
+                        start={0}
+                        end={98}
+                        suffix="%"
+                      />
                     </div>
                     <h4 className="skill-text">Html</h4>
                   </div>
@@ -50,7 +62,14 @@ export const MySkills = () => {
                   <div className="skill-item">
                     <div className="skill-box">
                       <img src={CssIcon} alt="css-icon" />
-                      <span className="skill-percent">99%</span>
+                      <CountUp
+                        className="skill-percent"
+                        enableScrollSpy={true}
+                        duration={5}
+                        start={0}
+                        end={99}
+                        suffix="%"
+                      />
                     </div>
                     <h4 className="skill-text">Css</h4>
                   </div>
@@ -63,7 +82,14 @@ export const MySkills = () => {
                   <div className="skill-item">
                     <div className="skill-box">
                       <img src={JsIcon} alt="js-icon" />
-                      <span className="skill-percent">93%</span>
+                      <CountUp
+                        className="skill-percent"
+                        enableScrollSpy={true}
+                        duration={5}
+                        start={0}
+                        end={93}
+                        suffix="%"
+                      />
                     </div>
                     <h4 className="skill-text">JavaScript</h4>
                   </div>
@@ -76,7 +102,14 @@ export const MySkills = () => {
                   <div className="skill-item">
                     <div className="skill-box">
                       <img src={ReactIcon} alt="react-icon" />
-                      <span className="skill-percent">95%</span>
+                      <CountUp
+                        className="skill-percent"
+                        enableScrollSpy={true}
+                        duration={5}
+                        start={0}
+                        end={95}
+                        suffix="%"
+                      />
                     </div>
                     <h4 className="skill-text">React</h4>
                   </div>
@@ -89,7 +122,14 @@ export const MySkills = () => {
                   <div className="skill-item">
                     <div className="skill-box">
                       <img src={ReduxIcon} alt="redux-icon" />
-                      <span className="skill-percent">86%</span>
+                      <CountUp
+                        className="skill-percent"
+                        enableScrollSpy={true}
+                        duration={5}
+                        start={0}
+                        end={86}
+                        suffix="%"
+                      />
                     </div>
                     <h4 className="skill-text">Redux</h4>
                   </div>

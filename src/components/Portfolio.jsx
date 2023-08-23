@@ -1,11 +1,12 @@
-import React from "react";
+// Icons
 import { IoShapesOutline } from "react-icons/io5";
+// Images
 import travalerImage from "../assets/images/travaler-image.png";
 import hommeImage from "../assets/images/homme-image.png";
 import adminImage from "../assets/images/admin-panel.png";
-import { Link } from "react-router-dom";
+// Libraries
 import { Element } from "react-scroll";
-
+import { Link } from "react-router-dom";
 export const Portfolio = () => {
   return (
     <Element name="test">

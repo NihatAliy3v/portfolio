@@ -12,6 +12,10 @@ import { RxEnvelopeClosed } from "react-icons/rx";
 export const RightSidebar = () => {
   return (
     <div className="right-sidebar">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
       <nav className="navbar">
         <ul className="nav-list">
           <li className="nav-item">

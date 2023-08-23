@@ -1,8 +1,11 @@
+// React
 import React, { useRef } from "react";
+// Icons
 import { RxEnvelopeClosed } from "react-icons/rx";
-import { Element } from "react-scroll";
-import emailjs from "@emailjs/browser";
+// Libraries
 import Swal from "sweetalert2";
+import emailjs from "@emailjs/browser";
+import { Element } from "react-scroll";
 // Formik
 import { useFormik } from "formik";
 import validations from "./validations";

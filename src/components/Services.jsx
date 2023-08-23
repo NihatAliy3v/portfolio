@@ -1,6 +1,7 @@
-import React from "react";
+// Icons
 import { FaStream } from "react-icons/fa";
 import { HiCodeBracket } from "react-icons/hi2";
+// Libraries
 import { Element } from "react-scroll";
 export const Services = () => {
   return (

@@ -1,4 +1,3 @@
-import React from "react";
 // images
 import Logo from "../assets/images/main-logo.png";
 import Me from "../assets/images/real-me.jpg";

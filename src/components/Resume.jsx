@@ -1,5 +1,6 @@
-import React from "react";
+// Icons
 import { IoBriefcaseOutline } from "react-icons/io5";
+// Libraries
 import { Element } from "react-scroll";
 export const Resume = () => {
   return (

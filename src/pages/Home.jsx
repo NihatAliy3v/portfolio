@@ -1,6 +1,6 @@
+// Components
 import { LeftSidebar } from "../components/LeftSidebar";
 import { RightSidebar } from "../components/RightSidebar";
-// import { DropMenu } from "../components/DropMenu";
 import { Hero } from "../components/Hero";
 import { About } from "../components/About";
 import { Resume } from "../components/Resume";
@@ -8,8 +8,9 @@ import { Services } from "../components/Services";
 import { MySkills } from "../components/MySkills";
 import { ContactSection } from "../components/ContactSection";
 import { Portfolio } from "../components/Portfolio";
-import { useEffect, useState } from "react";
 import { Loading } from "../components/Loading";
+// React
+import { useEffect, useState } from "react";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);

@@ -1,6 +1,7 @@
-import React from "react";
-import { AiOutlineUser } from "react-icons/ai";
+// Libraries
 import { Element } from "react-scroll";
+// Icons
+import { AiOutlineUser } from "react-icons/ai";
 export const About = () => {
   return (
     <Element name="about">
