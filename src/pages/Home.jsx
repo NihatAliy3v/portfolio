@@ -21,26 +21,24 @@ const Home = () => {
   }, []);
   return (
     <>
-      {!loading ? (
-        <section className="home">
-          <LeftSidebar />
-          {/* <DropMenu /> */}
-          <main>
-            {/* sections */}
-            <Hero />
-            <About />
-            <Resume />
-            <Services />
-            <MySkills />
-            <Portfolio />
-            <ContactSection />
-            {/* sections */}
-          </main>
-          <RightSidebar />
-        </section>
-      ) : (
-        <Loading />
-      )}
+      {loading && <Loading />}
+
+      <section className="home">
+        <LeftSidebar />
+        {/* <DropMenu /> */}
+        <main>
+          {/* sections */}
+          <Hero />
+          <About />
+          <Resume />
+          <Services />
+          <MySkills />
+          <Portfolio />
+          <ContactSection />
+          {/* sections */}
+        </main>
+        <RightSidebar />
+      </section>
     </>
   );
 };
