@@ -56,7 +56,7 @@ export const ContactSection = () => {
             <div
               className="section-head"
               data-aos="fade-up"
-              data-aos-duration="1500"
+              data-aos-duration="900"
             >
               <RxEnvelopeClosed className="icon-element" />
               <h2 className="title">contact</h2>
@@ -65,7 +65,7 @@ export const ContactSection = () => {
               <h2
                 className="contact-title"
                 data-aos="fade-up"
-                data-aos-duration="1500"
+                data-aos-duration="900"
               >
                 Contact <span className="strong">Me!</span>
               </h2>
@@ -73,7 +73,7 @@ export const ContactSection = () => {
                 <h4
                   className="form-title"
                   data-aos="fade-up"
-                  data-aos-duration="1500"
+                  data-aos-duration="900"
                 >
                   nihataliy3v@gmail.com
                 </h4>

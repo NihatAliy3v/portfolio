@@ -19,7 +19,7 @@ export const MySkills = () => {
             <div
               className="section-head"
               data-aos="fade-up"
-              data-aos-duration="1500"
+              data-aos-duration="900"
             >
               <IoShapesOutline className="icon-element" />
               <h2 className="title">my skills</h2>
@@ -27,7 +27,7 @@ export const MySkills = () => {
             <h2
               className="my-skills-title"
               data-aos="fade-up"
-              data-aos-duration="1500"
+              data-aos-duration="900"
             >
               My <span className="strong">Advantages</span>
             </h2>
@@ -36,7 +36,7 @@ export const MySkills = () => {
                 <div
                   className="skill-item-container"
                   data-aos="fade-right"
-                  data-aos-duration="1500"
+                  data-aos-duration="900"
                 >
                   <div className="skill-item">
                     <div className="skill-box">
@@ -57,7 +57,7 @@ export const MySkills = () => {
                 <div
                   className="skill-item-container"
                   data-aos="fade-up"
-                  data-aos-duration="1500"
+                  data-aos-duration="900"
                 >
                   <div className="skill-item">
                     <div className="skill-box">
@@ -77,7 +77,7 @@ export const MySkills = () => {
                 <div
                   className="skill-item-container"
                   data-aos="fade-down"
-                  data-aos-duration="1500"
+                  data-aos-duration="900"
                 >
                   <div className="skill-item">
                     <div className="skill-box">
@@ -97,7 +97,7 @@ export const MySkills = () => {
                 <div
                   className="skill-item-container"
                   data-aos="fade-left"
-                  data-aos-duration="1500"
+                  data-aos-duration="900"
                 >
                   <div className="skill-item">
                     <div className="skill-box">
@@ -117,7 +117,7 @@ export const MySkills = () => {
                 <div
                   className="skill-item-container"
                   data-aos="fade-right"
-                  data-aos-duration="1500"
+                  data-aos-duration="900"
                 >
                   <div className="skill-item">
                     <div className="skill-box">

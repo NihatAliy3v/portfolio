@@ -12,7 +12,7 @@ export const Services = () => {
             <div
               className="section-head"
               data-aos="fade-up"
-              data-aos-duration="1500"
+              data-aos-duration="900"
             >
               <FaStream className="icon-element" />
               <h2 className="title">services</h2>
@@ -20,7 +20,7 @@ export const Services = () => {
             <h2
               className="services-title"
               data-aos="fade-up"
-              data-aos-duration="1500"
+              data-aos-duration="900"
             >
               My <span className="strong">Specializations</span>
             </h2>
@@ -28,12 +28,12 @@ export const Services = () => {
               <div
                 className="services-list"
                 data-aos="fade-up"
-                data-aos-duration="1500"
+                data-aos-duration="900"
               >
                 <div
                   className="services-item"
                   data-aos="fade-up"
-                  data-aos-duration="1500"
+                  data-aos-duration="900"
                 >
                   <h3 className="title">Development</h3>
                   <p className="description">

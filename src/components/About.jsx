@@ -11,7 +11,7 @@ export const About = () => {
             <div
               className="section-head"
               data-aos="fade-up"
-              data-aos-duration="1500"
+              data-aos-duration="900"
             >
               <AiOutlineUser className="icon-element" />
               <h2 className="title">about</h2>
@@ -20,7 +20,7 @@ export const About = () => {
               <h2
                 className="about-title"
                 data-aos="fade-up"
-                data-aos-duration="1500"
+                data-aos-duration="900"
               >
                 I am
                 <span className="strong"> Frontend Developer</span>
@@ -28,7 +28,7 @@ export const About = () => {
               <p
                 className="about-paragraph"
                 data-aos="fade-up"
-                data-aos-duration="1500"
+                data-aos-duration="900"
               >
                 I am a hardworking and ambitious individual with a great passion
                 for Frontend. I have excellent communication skills, enabling me

@@ -16,7 +16,7 @@ export const Portfolio = () => {
             <div
               className="section-head"
               data-aos="fade-up"
-              data-aos-duration="1500"
+              data-aos-duration="900"
             >
               <IoShapesOutline className="icon-element" />
               <h2 className="title">portfolio</h2>
@@ -25,7 +25,7 @@ export const Portfolio = () => {
             <h2
               className="portfolio-title"
               data-aos="fade-up"
-              data-aos-duration="1500"
+              data-aos-duration="900"
             >
               Featured <span className="strong">Projects</span>
             </h2>
@@ -35,7 +35,7 @@ export const Portfolio = () => {
                   <div
                     className="card"
                     data-aos="fade-up"
-                    data-aos-duration="1500"
+                    data-aos-duration="900"
                   >
                     <Link
                       to="https://github.com/NihatAliy3v/Homme-Project.git"
@@ -57,7 +57,7 @@ export const Portfolio = () => {
                   <div
                     className="card"
                     data-aos="fade-right"
-                    data-aos-duration="1500"
+                    data-aos-duration="900"
                   >
                     <Link
                       to="https://travaler-clone.netlify.app/"
@@ -79,7 +79,7 @@ export const Portfolio = () => {
                   <div
                     className="card"
                     data-aos="fade-left"
-                    data-aos-duration="1500"
+                    data-aos-duration="900"
                   >
                     <Link
                       to="https://github.com/NihatAliy3v/Admin-Panel.git"
@@ -101,7 +101,7 @@ export const Portfolio = () => {
                   <div
                     className="card"
                     data-aos="fade-up"
-                    data-aos-duration="1500"
+                    data-aos-duration="900"
                   >
                     <Link to="" className="image-item">
                       <img src={portfolio4} alt="" />

@@ -11,7 +11,7 @@ export const Resume = () => {
             <div
               className="section-head"
               data-aos="fade-up"
-              data-aos-duration="1500"
+              data-aos-duration="900"
             >
               <IoBriefcaseOutline className="icon-element" />
               <h2 className="title">resume</h2>
@@ -19,7 +19,7 @@ export const Resume = () => {
             <h2
               className="resume-title"
               data-aos="fade-up"
-              data-aos-duration="1500"
+              data-aos-duration="900"
             >
               Education & <span className="strong">Experience</span>
             </h2>
@@ -28,7 +28,7 @@ export const Resume = () => {
                 <div
                   className="resume-item"
                   data-aos="fade-left"
-                  data-aos-duration="1500"
+                  data-aos-duration="900"
                 >
                   <span className="item-date">2022 - 2023</span>
                   <h3 className="item-title">Frontend Developer</h3>
@@ -37,7 +37,7 @@ export const Resume = () => {
                 <div
                   className="resume-item"
                   data-aos="fade-left"
-                  data-aos-duration="1500"
+                  data-aos-duration="900"
                 >
                   <span className="item-date">2021 - 2025</span>
                   <h3 className="item-title">Information Technology</h3>
