@@ -8,6 +8,7 @@
   padding: 30px;
   border: 1px solid #565656;
   border-radius: 30px;
+  background-color: var(--left-sidebar-color);
   .setting {
     display: flex;
     justify-content: center;
@@ -15,13 +16,13 @@
     position: absolute;
     left: -15px;
     top: 10px;
-    background-color: $main-background;
+    background-color: var(--left-sidebar-color);
     width: 40px;
     height: 40px;
     animation: setting 3s linear infinite;
     border-radius: 50%;
     .setting-icon {
-      color: #999;
+      color: var(--secondary-color);
       font-size: 20px;
     }
   }
@@ -40,7 +41,7 @@
       max-width: 110px;
       .sidebar-job-text {
         font-size: 14px;
-        color: #fff;
+        color: var(--primary-text-color);
         text-align: end;
         line-height: 20px;
       }
@@ -61,14 +62,14 @@
       margin-bottom: 46px;
     }
     .gmail {
-      color: #fff;
+      color: var(--primary-text-color);
       font-size: 24px;
       font-weight: 300;
       line-height: 29px;
       margin-bottom: 8px;
     }
     .country {
-      color: #fff;
+      color: var(--primary-text-color);
       font-size: 24px;
       font-weight: 300;
       line-height: 29px;
@@ -84,20 +85,20 @@
         align-items: center;
         width: 50px;
         height: 50px;
-        color: #999;
-        border: 2px solid #565656;
+        color: var(--secondary-color);
+        border: 2px solid var(--secondary-color);
         border-radius: 50%;
         font-size: 18px;
         transition: all 0.3s;
         &:hover {
-          color: $main-color;
-          border-color: $main-border;
+          color: var(--primary-color);
+          border-color: var(--primary-color);
         }
       }
     }
     .sidebar-btn {
       width: 100%;
-      background-color: $main-color;
+      background-color: var(--primary-color);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -107,12 +108,13 @@
       color: #000;
       text-transform: uppercase;
       line-height: 27px;
-      border: 2px solid $main-color;
+      border: 2px solid var(--main-border);
       transition: all 0.3s;
+      box-shadow: 0 0 5px #000;
       cursor: pointer;
       &:hover {
-        background-color: transparent;
-        color: $main-color;
+        background-color: var(--primary-background);
+        color: var(--main-border);
       }
       .sidebar-btn-icon {
         margin-right: 9px;

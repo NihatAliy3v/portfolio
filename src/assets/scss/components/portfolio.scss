@@ -8,10 +8,10 @@
         font-size: 4.8rem;
         font-weight: 300;
         line-height: 60px;
-        color: #fff;
+        color: var(--primary-text-color);
         margin-bottom: 33px;
         .strong {
-          color: $main-color;
+          color: var(--primary-color);
         }
       }
       .portfolio-main {
@@ -42,7 +42,7 @@
                   font-size: 24px;
                   font-weight: 300;
                   line-height: 29px;
-                  color: #fff;
+                  color: var(--primary-text-color);
                   position: relative;
                   display: inline-block;
                   &::after {
@@ -50,7 +50,7 @@
                     content: "";
                     display: block;
                     position: absolute;
-                    background-color: #fff;
+                    background-color: var(--primary-text-color);
                     width: 100%;
                     height: 1px;
                     opacity: 0.5;

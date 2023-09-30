@@ -62,12 +62,12 @@
           outline: none;
           &.active {
             .icon {
-              color: $main-color;
+              color: var(--primary-color);
             }
           }
           &:hover {
             .icon {
-              color: $main-color;
+              color: var(--primary-color);
             }
           }
           .icon {

@@ -9,6 +9,7 @@ import { MySkills } from "../components/MySkills";
 import { ContactSection } from "../components/ContactSection";
 import { Portfolio } from "../components/Portfolio";
 import { Loading } from "../components/Loading";
+import { Theme } from "../components/Theme";
 // React
 import { useEffect, useState } from "react";
 
@@ -17,7 +18,7 @@ const Home = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 1100);
+    }, 0);
   }, []);
   return (
     <>

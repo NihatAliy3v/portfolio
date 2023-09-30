@@ -11,10 +11,12 @@ import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
 import { AiOutlineSetting } from "react-icons/ai";
 import { RxEnvelopeClosed } from "react-icons/rx";
+import { Theme } from "./Theme";
 
 export const LeftSidebar = () => {
   return (
     <div className="left-sidebar">
+      <Theme />
       <span className="setting">
         <AiOutlineSetting className="setting-icon" />
       </span>

@@ -1,4 +1,19 @@
-$main-background: #1f1f1f;
-// $main-color:#28e98c;
 $main-color: #d5552e;
 $main-border: #b23915;
+
+.App {
+  --primary-color: #7272be;
+  --secondary-color: #010101;
+  --primary-background: #fff;
+  --primary-text-color: #010101;
+  --left-sidebar-color: var(--primary-color);
+  --main-border: #5454f3;
+}
+.dark-mode {
+  --primary-color: #d5552e;
+  --secondary-color: #999;
+  --primary-background: #1f1f1f;
+  --primary-text-color: #fff;
+  --left-sidebar-color: var(--primary-background);
+  --main-border: #b23915;
+}

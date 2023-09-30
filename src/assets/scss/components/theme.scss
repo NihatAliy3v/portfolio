@@ -1,0 +1,28 @@
+.theme {
+  opacity: 0.4;
+  transition: all 0.3s;
+  &:hover {
+    opacity: 1;
+  }
+  .theme-container {
+    position: fixed;
+    right: -40px;
+    .theme-btn {
+      background-color: transparent;
+      outline: none;
+      border: none;
+      display: block;
+      border-radius: 50%;
+      border: 1px solid var(--primary-text-color);
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      .theme-icon {
+        color: var(--primary-text-color);
+      }
+    }
+  }
+}

@@ -17,8 +17,12 @@
   margin-left: auto;
   width: 100%;
 }
-body {
-  background-color: $main-background;
+.App {
+  background-color: var(--primary-background);
+  overflow-y: hidden;
+}
+body{
+
 }
 html {
   font-size: 62.5%;
