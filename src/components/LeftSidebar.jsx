@@ -16,7 +16,6 @@ import { Theme } from "./Theme";
 export const LeftSidebar = () => {
   return (
     <div className="left-sidebar">
-      <Theme />
       <span className="setting">
         <AiOutlineSetting className="setting-icon" />
       </span>
@@ -27,6 +26,7 @@ export const LeftSidebar = () => {
         <div className="sidebar-job">
           <p className="sidebar-job-text">Frontend Developer</p>
         </div>
+        <Theme />
       </div>
       <div className="sidebar-main">
         <img className="sidebar-main-img" src={Me} alt="me" />

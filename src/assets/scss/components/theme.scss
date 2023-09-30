@@ -1,12 +1,12 @@
 .theme {
   opacity: 0.4;
   transition: all 0.3s;
+  margin-left: 20px;
+  margin-right: -10px;
   &:hover {
     opacity: 1;
   }
   .theme-container {
-    position: fixed;
-    right: -40px;
     .theme-btn {
       background-color: transparent;
       outline: none;
