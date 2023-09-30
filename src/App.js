@@ -8,10 +8,8 @@ import { ThemeContext } from "./context/ThemeContext";
 function App() {
   const { themeInLocal } = useContext(ThemeContext);
 
-  document.body.setAttribute("class", "dark-mode");
-
   return (
-    <div className={`App ${themeInLocal === "dark" ? "dark-mode" : ""}`}>
+    <div className={`App ${themeInLocal === "light" ? "" : "dark-mode"}`}>
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
