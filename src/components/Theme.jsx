@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { useState } from "react";
 import { MdDarkMode, MdOutlineLightMode } from "react-icons/md";
 import { ThemeContext } from "../context/ThemeContext";
 

@@ -2,12 +2,12 @@
 import { Route, Routes } from "react-router-dom";
 // Pages
 import Home from "./pages/Home";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { ThemeContext } from "./context/ThemeContext";
 
 function App() {
   const { themeInLocal } = useContext(ThemeContext);
-  
+
   document.body.setAttribute("class", "dark-mode");
 
   return (
