@@ -11,13 +11,14 @@ import { Portfolio } from "../components/Portfolio";
 import { Loading } from "../components/Loading";
 // React
 import { useEffect, useState } from "react";
+import { MobileMenu } from "../components/MobileMenu";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 0);
+    }, 1500);
   }, []);
   return (
     <>
@@ -38,6 +39,7 @@ const Home = () => {
           {/* sections */}
         </main>
         <RightSidebar />
+        <MobileMenu />
       </section>
     </>
   );
