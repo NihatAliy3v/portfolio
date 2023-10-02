@@ -6,12 +6,12 @@ export const Theme = () => {
   // true dark
   // false light
 
-  const { changeTheme, themeInLocal } = useContext(ThemeContext);
+  const { changeTheme, theme } = useContext(ThemeContext);
   return (
     <div className="theme">
       <div className="theme-container">
         <button className="theme-btn" onClick={changeTheme}>
-          {themeInLocal === "dark" ? (
+          {theme === "dark" ? (
             <MdOutlineLightMode className="theme-icon light" size={20} />
           ) : (
             <MdDarkMode className="theme-icon dark" size={20} />

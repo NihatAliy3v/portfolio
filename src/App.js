@@ -6,10 +6,10 @@ import { useContext } from "react";
 import { ThemeContext } from "./context/ThemeContext";
 
 function App() {
-  const { themeInLocal } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
 
   return (
-    <div className={`App ${themeInLocal === "light" ? "" : "dark-mode"}`}>
+    <div className={`App ${theme === "light" ? "" : "dark-mode"}`}>
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>

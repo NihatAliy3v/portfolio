@@ -91,8 +91,8 @@
         font-size: 18px;
         transition: all 0.3s;
         &:hover {
-          color: var(--primary-color);
-          border-color: var(--primary-color);
+          color: var(--main-border);
+          border-color: var(--main-border);
         }
       }
     }
@@ -105,16 +105,16 @@
       padding: 11px 0;
       border-radius: 30px;
       font-size: 16px;
-      color: #000;
+      color: #fff;
       text-transform: uppercase;
       line-height: 27px;
       border: 2px solid var(--main-border);
       transition: all 0.3s;
-      box-shadow: 0 0 5px #000;
       cursor: pointer;
       &:hover {
         background-color: var(--primary-background);
         color: var(--main-border);
+        transform: scale(1.05);
       }
       .sidebar-btn-icon {
         margin-right: 9px;

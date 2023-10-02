@@ -2,14 +2,17 @@ $main-color: #d5552e;
 $main-border: #b23915;
 
 .App {
-  --primary-color: #7272be;
-  --secondary-color: #010101;
+  // --primary-color: #7272be;
+
+  // --primary-color: #7b9780;
+  --primary-color: #8ca6e2;
+  --secondary-color: #ffffff;
   --primary-background: #fff;
   --primary-text-color: #010101;
   --left-sidebar-color: var(--primary-color);
-  --main-border: #5454f3;
+  --main-border: #344a7e;
 }
-.dark-mode {
+.dark-mode {  
   --primary-color: #d5552e;
   --secondary-color: #999;
   --primary-background: #1f1f1f;
