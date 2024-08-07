@@ -2,7 +2,9 @@
 import { Element } from "react-scroll";
 // Icons
 import { AiOutlineUser } from "react-icons/ai";
+import { useTranslation } from "react-i18next";
 export const About = () => {
+  const { t } = useTranslation();
   return (
     <Element name="about">
       <section className="about">
@@ -22,7 +24,7 @@ export const About = () => {
                 data-aos="fade-up"
                 data-aos-duration="900"
               >
-                I am
+                {t("title_me")}
                 <span className="strong"> Frontend Developer</span>
               </h2>
               <p
@@ -30,7 +32,7 @@ export const About = () => {
                 data-aos="fade-up"
                 data-aos-duration="900"
               >
-                I have enjoyed coding since I started writing code. I work hard to learn every day because it's enjoyable for me. Learning new things excites me, and I've explored different programming languages like C, C++, and Java. Eventually, I developed a strong interest in the JavaScript programming language, which is why I find frontend development suitable for me.
+                {t("about_me")}
               </p>
             </div>
           </div>

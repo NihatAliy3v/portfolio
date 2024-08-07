@@ -53,7 +53,7 @@ export const Portfolio = () => {
                     </Link>
                   </div>
                 </div>
-                <div className="card-line">
+                {/* <div className="card-line">
                   <div
                     className="card"
                     data-aos="fade-right"
@@ -74,7 +74,7 @@ export const Portfolio = () => {
                       <h4 className="title">Travalers - Clone</h4>
                     </Link>
                   </div>
-                </div>
+                </div> */}
                 <div className="card-line">
                   <div
                     className="card"

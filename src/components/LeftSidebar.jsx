@@ -11,9 +11,19 @@ import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
 import { AiOutlineSetting } from "react-icons/ai";
 import { RxEnvelopeClosed } from "react-icons/rx";
+import { MdKeyboardArrowDown } from "react-icons/md";
 import { Theme } from "./Theme";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export const LeftSidebar = () => {
+  const [activeLang, setActiveLang] = useState(false);
+  const { t, i18n } = useTranslation();
+
+  const changeLang = () => {
+    i18n.changeLanguage(i18n.language === "en" ? "az" : "en");
+    setActiveLang(false);
+  };
   return (
     <div className="left-sidebar">
       <span className="setting">
@@ -23,8 +33,19 @@ export const LeftSidebar = () => {
         <div className="sidebar-logo">
           <img className="sidebar-logo-img" src={Logo} alt="logo" />
         </div>
-        <div className="sidebar-job">
-          <p className="sidebar-job-text">Frontend Developer</p>
+        <div className="sidebar-lang-container">
+          <button
+            className="sidebar-lang"
+            onClick={() => setActiveLang(!activeLang)}
+          >
+            <span className="current-lang-text">{i18n.language}</span>
+            <MdKeyboardArrowDown size={20} />
+          </button>
+          <div className={`dropdown-lang ${activeLang ? "active" : ""}`}>
+            <button className="change-lang" onClick={changeLang}>
+              {i18n.language === "en" ? "az" : "en"}
+            </button>
+          </div>
         </div>
         <Theme />
       </div>

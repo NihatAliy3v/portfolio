@@ -6,8 +6,13 @@ import { AiOutlineHome } from "react-icons/ai";
 import { BsArrowDown } from "react-icons/bs";
 // Images
 import RoundText from "../assets/images/round-text.png";
+import { useTranslation } from "react-i18next";
+
 
 export const Hero = () => {
+ 
+
+  const { t } = useTranslation();
   return (
     <Element name="hero">
       <section className="hero">
@@ -21,9 +26,7 @@ export const Hero = () => {
               <h1 className="hero-title">
                 <span className="name">Nihat Aliyev</span>, Frontend Developer
               </h1>
-              <p className="hero-summary">
-                I am Frontend Developer. I like to create website.
-              </p>
+              <p className="hero-summary">{t("hero_me")}</p>
             </div>
             <div className="go-to-ptoject-container">
               <ScrollLink

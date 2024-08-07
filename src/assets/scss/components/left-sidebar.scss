@@ -37,13 +37,45 @@
         height: 100%;
       }
     }
-    .sidebar-job {
-      max-width: 110px;
-      .sidebar-job-text {
-        font-size: 14px;
+    .sidebar-lang-container {
+      margin: 0 0 10px 20px;
+      position: relative;
+      .sidebar-lang {
+        display: flex;
+        align-items: center;
         color: var(--primary-text-color);
-        text-align: end;
-        line-height: 20px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background: none;
+        margin-bottom: 3px;
+        .current-lang-text {
+          font-size: 14px;
+          color: var(--primary-text-color);
+          margin-right: 2px;
+          text-transform: capitalize;
+        }
+      }
+
+      .dropdown-lang {
+        display: none;
+        position: absolute;
+        width: 100%;
+        &.active {
+          display: block;
+        }
+        .change-lang {
+          display: flex;
+          width: 100%;
+          justify-content: flex-start;
+          font-size: 14px;
+          color: var(--primary-text-color);
+          cursor: pointer;
+          border: none;
+          outline: none;
+          background: none;
+          text-transform: capitalize;
+        }
       }
     }
   }
