@@ -19,7 +19,7 @@ import { useTranslation } from "react-i18next";
 export const LeftSidebar = () => {
   const [activeLang, setActiveLang] = useState(false);
   const { t, i18n } = useTranslation();
-
+  console.log(t)
   const changeLang = () => {
     i18n.changeLanguage(i18n.language === "en" ? "az" : "en");
     setActiveLang(false);

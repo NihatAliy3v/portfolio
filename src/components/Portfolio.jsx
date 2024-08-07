@@ -1,7 +1,7 @@
 // Icons
 import { IoShapesOutline } from "react-icons/io5";
 // Images
-import travalerImage from "../assets/images/travaler-image.png";
+// import travalerImage from "../assets/images/travaler-image.png";
 import hommeImage from "../assets/images/homme-image.png";
 import adminImage from "../assets/images/admin-panel.png";
 // Libraries

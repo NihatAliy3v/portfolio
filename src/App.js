@@ -2,7 +2,7 @@
 import { Route, Routes } from "react-router-dom";
 // Pages
 import Home from "./pages/Home";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { ThemeContext } from "./context/ThemeContext";
 import { driverObj } from "./driver";
 
