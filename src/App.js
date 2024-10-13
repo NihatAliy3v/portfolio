@@ -6,9 +6,18 @@ import { useContext } from "react";
 import { ThemeContext } from "./context/ThemeContext";
 import { driverObj } from "./driver";
 
+
+
+
 setTimeout(() => {
-  driverObj.drive();
+  if(!localStorage.getItem("driver")){
+    driverObj.drive();
+  }
+  localStorage.setItem("driver",true)
 }, 1500);
+
+
+
 
 function App() {
   const { theme } = useContext(ThemeContext);
